@@ -1,5 +1,5 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --bg: #0d0f14;
     --bg2: #131720;
@@ -127,7 +127,19 @@
     transition: border-color 0.2s, color 0.2s, transform 0.15s;
   }
   .btn-outline:hover { border-color: var(--accent); color: var(--accent2); transform: translateY(-1px); }
-
+  .btn-download {
+    border: 1px solid rgba(16,185,129,0.4);
+    color: #10b981;
+    padding: 0.65rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    background: rgba(16,185,129,0.08);
+  }
+  .btn-download:hover { background: rgba(16,185,129,0.18); border-color: #10b981; transform: translateY(-1px); }
+ 
   /* FOTO */
   .hero-photo-wrap {
     position: relative;
@@ -198,7 +210,7 @@
     background: var(--accent);
     margin-bottom: 2.5rem;
   }
-
+ 
   /* SOBRE */
   #sobre { background: var(--bg2); }
   .sobre-grid {
